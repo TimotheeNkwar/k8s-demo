@@ -1,4 +1,4 @@
-# FastAPI on Kubernetes: Complete Tutorial 🚀
+# FastAPI on Kubernetes: Complete Tutorial
 
 A comprehensive guide to containerizing and deploying a FastAPI application on Kubernetes using Minikube. This tutorial covers Docker fundamentals, Kubernetes concepts, and best practices for production-ready applications.
 
@@ -74,9 +74,9 @@ k8s-demo/
 
 **Benefits:**
 
-- ✅ Consistency: Runs the same everywhere (dev, staging, production)
-- ✅ Isolation: Packages are isolated from each other
-- ✅ Efficiency: Minimal overhead compared to VMs
+- Consistency: Runs the same everywhere (dev, staging, production)
+- Isolation: Packages are isolated from each other
+- Efficiency: Minimal overhead compared to VMs
 
 ### What is Kubernetes?
 
@@ -608,14 +608,14 @@ kubectl top nodes
 
 ## Best Practices Implemented
 
-✅ **Non-root user**: Container runs as `appuser`, not root (security)  
-✅ **Lightweight base image**: `python:3.11-slim` (smaller than standard Python image)  
-✅ **Layer caching**: Dependencies installed before application code  
-✅ **Health checks**: Readiness probe ensures pods are healthy  
-✅ **Multiple replicas**: 2 pods provide redundancy and load balancing  
-✅ **Service abstraction**: Service provides stable endpoint for ephemeral pods  
-✅ **Pip upgrades**: Fresh pip avoids deprecation warnings  
-✅ **No cache**: `--no-cache-dir` reduces image size  
+- **Non-root user**: Container runs as `appuser`, not root (security)  
+- **Lightweight base image**: `python:3.11-slim` (smaller than standard Python image)  
+- **Layer caching**: Dependencies installed before application code  
+- **Health checks**: Readiness probe ensures pods are healthy  
+- **Multiple replicas**: 2 pods provide redundancy and load balancing  
+- **Service abstraction**: Service provides stable endpoint for ephemeral pods  
+- **Pip upgrades**: Fresh pip avoids deprecation warnings  
+- **No cache**: `--no-cache-dir` reduces image size  
 
 ---
 
